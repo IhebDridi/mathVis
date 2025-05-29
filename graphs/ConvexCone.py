@@ -17,6 +17,11 @@ def plot_convexcone():
                    "out from a common point, and includes all non-negative "
                    "linear combinations of these vectors.")
 
-    math_explanation = ("")
+    math_explanation = (
+    "Mathematical Explanation:\n\n"
+    "A convex cone $K$ in $\\mathbb{R}^n$ is a set closed under addition and multiplication by non-negative scalars:\n\n"
+    "$$ \\forall x, y \\in K, \\forall \\alpha, \\beta \\geq 0, \\enspace \\alpha x + \\beta y \\in K $$\n"
+    "Any conical hull is a convex cone, and the intersection of any collection of convex cones is a convex cone."
+)
 
     return fig, explanation, math_explanation

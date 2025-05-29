@@ -16,6 +16,13 @@ def plot_polyhedron():
 
     explanation = ("A polyhedron is a flat-faced solid bounded by polygons, "
                    "ideal for representing feasible regions in optimization.")
-    math_explanation = ("")
+    math_explanation = (
+    "Mathematical Explanation:\n\n"
+    "A polyhedron in $\\mathbb{R}^n$ is the solution set of a finite system of linear inequalities (and possibly equalities):\n\n"
+    "$$ P = \\{ x \\in \\mathbb{R}^n \\mid A x \\leq b \\} $$\n"
+    "where $A$ is a real $m \\times n$ matrix and $b \\in \\mathbb{R}^m$.\n\n"
+    "A polyhedron may be bounded (then it is a polytope), or unbounded.\n"
+    "Each face (of any dimension) of a polyhedron is itself a polyhedron."
+)
 
     return fig, explanation, math_explanation

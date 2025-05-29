@@ -18,6 +18,14 @@ def plot_polytope():
     explanation = ("A polytope is a bounded polyhedron, representing the "
                    "convex hull of a finite set of points with flat faces.")
 
-    math_explanation = ("")
+    math_explanation = (
+    "Mathematical Explanation:\n\n"
+    "A polytope in $\\mathbb{R}^n$ is the convex hull of a finite set of points. More formally:\n\n"
+    "$$ P = \\text{conv}(\\{v_1, \\dots, v_k\\}) = \\left\\{ \\sum_{i=1}^k \\lambda_i v_i \\mid \\lambda_i \\geq 0, \\sum_{i=1}^k \\lambda_i = 1 \\right\\} $$\n"
+    "where $v_i \\in \\mathbb{R}^n$ are the vertices of the polytope, and $\\lambda_i$ are non-negative real numbers.\n\n"
+    "Alternatively, a polytope can be defined as the bounded solution set to a finite system of linear inequalities:\n"
+    "$$ P = \\{ x \\in \\mathbb{R}^n \\mid A x \\leq b \\} $$\n"
+    "if $P$ is bounded. Every polytope is both convex and bounded."
+)
 
     return fig, explanation, math_explanation
