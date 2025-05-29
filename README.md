@@ -21,20 +21,19 @@ The app gives **graphical representations, intuitive descriptions, and mathemati
 
 ---
 
-## Geometric Structures: Common Properties and Comparisons
+## Geometric Structures: Comparison Table
 
-All geometric structures in this app are **convex sets**, playing central roles in geometry and optimization. They differ mainly in their definitions (via points, rays, inequalities) and boundedness.
-
-| Structure        | Convex? | Defined by                                  | Bounded?          | Generators                |
-|------------------|---------|---------------------------------------------|-------------------|---------------------------|
-| Convex Hull      | Yes     | Convex combinations of points               | Yes (if finite)   | Points (vertices)         |
-| Conical Hull     | Yes     | Non-negative linear combinations of vectors | No (except at 0)  | Vectors (rays)            |
-| Convex Cone      | Yes     | Non-negative linear combinations            | No (except at 0)  | Rays/generators           |
-| Polyhedral Cone  | Yes     | Linear inequalities through 0 (the origin)  | No                | Vectors (rays, finite)    |
-| Polyhedron       | Yes     | Linear inequalities                         | Can be; not always| Faces, edges, vertices    |
-| Polytope         | Yes     | Linear inequalities (and bounded) or convex hull | Yes        | Points (vertices, finite) |
+| Structure        | Convex? | Bounded?     | Generators            | Description                                               |
+|------------------|---------|--------------|-----------------------|-----------------------------------------------------------|
+| **Convex Hull**      | Yes     | Yes (if finite set) | Points                | Smallest convex set containing a given set of points.     |
+| **Conical Hull**     | Yes     | No           | Vectors (finite set)  | All non-negative combinations of given vectors.           |
+| **Convex Cone**      | Yes     | No (except $\\{0\\}$) | Directions/rays (possibly infinite) | Any set closed under non-negative scaling/addition.       |
+| **Polyhedral Cone**  | Yes     | No (except $\\{0\\}$) | Vectors (finite set)  | Convex cone defined by finitely many linear inequalities. |
+| **Polyhedron**       | Yes     | Not always   | Faces/vertices/edges  | Solution set to finitely many linear inequalities.        |
+| **Polytope**         | Yes     | Yes          | Vertices (finite set) | Bounded polyhedron; convex hull of a finite set of points.|
 
 ---
+
 
 ## Getting Started
 
