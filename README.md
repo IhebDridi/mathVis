@@ -7,11 +7,11 @@ The app gives **graphical representations, intuitive descriptions, and mathemati
 
 ## Features
 
-- 🔢 Interactive selection of geometric objects: Convex Hull, Conical Hull, Convex Cone, Polytope, Polyhedral Cone, and more.
-- 📊 Visualization of each object using Matplotlib.
-- 📘 Clear descriptions and mathematical (LaTeX-formatted) explanations.
-- ⚡ Powered by Streamlit for instant web-based interactivity.
-- 🗃️ Modular code: Easily add new objects as Python modules in the `graphs/` folder.
+- Interactive selection of geometric objects: Convex Hull, Conical Hull, Convex Cone, Polytope, Polyhedral Cone, and more.
+- Visualization of each object using Matplotlib.
+- Clear descriptions and mathematical (LaTeX-formatted) explanations.
+- Powered by Streamlit for instant web-based interactivity.
+- Modular code: Easily add new objects as Python modules in the `graphs/` folder.
 
 ---
 
