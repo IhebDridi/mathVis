@@ -15,7 +15,7 @@ def plot_convexhull2d():
 
     plt.title('2D Convex Hull')
 
-    description = ("The convex hull is the smallest convex boundary that "
+    explanation = ("The convex hull is the smallest convex boundary that "
                    "encloses a set of points, forming a convex polygon "
                    "with outer points as vertices.")
 
@@ -33,4 +33,12 @@ def plot_convexhull2d():
         "the line segment joining them is entirely contained within the set."
     )
 
-    return fig, description, math_explanation
+    math_properties = (
+        "**Properties:**\n"
+        "- Always convex by construction.\n"
+        "- Convex hull of a finite set in $\\mathbb{R}^n$ is a polytope.\n"
+        "- The convex hull is idempotent: $\\operatorname{conv}(\\operatorname{conv}(X)) = \\operatorname{conv}(X)$.\n"
+        "- Carathéodory's theorem: Any point is a convex combination of at most $n+1$ points from $X$.\n"
+        "- The hull operation preserves convexity: hull of a convex set is the set itself."
+    )
+    return fig, explanation, math_explanation, math_properties

@@ -28,4 +28,13 @@ def plot_polytope():
     "if $P$ is bounded. Every polytope is both convex and bounded."
 )
 
-    return fig, explanation, math_explanation
+    math_properties = (
+    "**Properties:**\n"
+    "- Always convex.\n"
+    "- Bounded: Yes.\n"
+    "- Generators: Vertices (finite list of points); all other points are convex combinations of these.\n"
+    "- Has finite vertices, edges, and faces.\n"
+    "- The intersection of finitely many half-spaces, if bounded, is a polytope.\n"
+    "- Is a special case of a polyhedron."
+)
+    return fig, explanation, math_explanation, math_properties

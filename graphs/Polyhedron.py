@@ -25,4 +25,13 @@ def plot_polyhedron():
     "Each face (of any dimension) of a polyhedron is itself a polyhedron."
 )
 
-    return fig, explanation, math_explanation
+    math_properties = (
+    "**Properties:**\n"
+    "- Always convex.\n"
+    "- Bounded: May be bounded (then it is a polytope) or unbounded.\n"
+    "- Generators: Defined by linear inequalities; vertices, edges, faces (which may themselves be convex sets).\n"
+    "- The intersection of finitely many half spaces.\n"
+    "- Every face (vertex, edge, facet) is itself a polyhedron.\n"
+    "- If bounded, a polyhedron is called a polytope."
+)
+    return fig, explanation, math_explanation, math_properties

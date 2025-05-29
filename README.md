@@ -21,6 +21,21 @@ The app gives **graphical representations, intuitive descriptions, and mathemati
 
 ---
 
+## Geometric Structures: Common Properties and Comparisons
+
+All geometric structures in this app are **convex sets**, playing central roles in geometry and optimization. They differ mainly in their definitions (via points, rays, inequalities) and boundedness.
+
+| Structure        | Convex? | Defined by                                  | Bounded?          | Generators                |
+|------------------|---------|---------------------------------------------|-------------------|---------------------------|
+| Convex Hull      | Yes     | Convex combinations of points               | Yes (if finite)   | Points (vertices)         |
+| Conical Hull     | Yes     | Non-negative linear combinations of vectors | No (except at 0)  | Vectors (rays)            |
+| Convex Cone      | Yes     | Non-negative linear combinations            | No (except at 0)  | Rays/generators           |
+| Polyhedral Cone  | Yes     | Linear inequalities through 0 (the origin)  | No                | Vectors (rays, finite)    |
+| Polyhedron       | Yes     | Linear inequalities                         | Can be; not always| Faces, edges, vertices    |
+| Polytope         | Yes     | Linear inequalities (and bounded) or convex hull | Yes        | Points (vertices, finite) |
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -103,6 +118,15 @@ MIT License
 ## Contributing
 
 Open an issue or pull request to suggest new geometries, fix bugs, or add documentation!
+
+---
+
+
+
+## Live Demo
+
+:rocket: **Try the app online:**  
+[https://mathvis-8fot3lo7zuzehveqhsrdld.streamlit.app/](https://mathvis-8fot3lo7zuzehveqhsrdld.streamlit.app/)
 
 ---
 

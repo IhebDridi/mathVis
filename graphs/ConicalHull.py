@@ -29,4 +29,12 @@ def plot_conicalhull(color='magenta', alpha=0.5):
     "If the $x_i$'s are linearly independent, the cone is 'pointed'; if all $\\lambda_i \\leq 0$, it's just the origin."
 )
 
-    return fig, explanation, math_explanation
+    math_properties = (
+    "**Properties:**\n"
+    "- Always convex (a type of convex cone).\n"
+    "- Bounded: No (unless all generators are $0$).\n"
+    "- Generators: The set of input vectors; the conical hull consists of all their non-negative linear combinations (rays from 0).\n"
+    "- Contains the origin if all $\\lambda_i = 0$ are possible in the combination.\n"
+    "- Closed under addition and non-negative scalar multiplication."
+)
+    return fig, explanation, math_explanation, math_properties

@@ -22,4 +22,12 @@ def plot_polyhedralcone():
     "where each element is a non-negative linear combination of the vectors $v_1, \\ldots, v_k$."
 )
 
-    return fig, explanation, math_explanation
+    math_properties = (
+    "**Properties:**\n"
+    "- Always convex and closed.\n"
+    "- Bounded: No (except for the trivial cone $\{0\}$).\n"
+    "- Generators: Finite set of rays/vectors (via conical hull) or as the intersection of a finite number of linear half-spaces through the origin.\n"
+    "- May or may not be pointed (contains a line through $0$ or not).\n"
+    "- Every polyhedral cone can be defined either by inequalities ($Ax \leq 0$) or generators."
+)
+    return fig, explanation, math_explanation, math_properties
